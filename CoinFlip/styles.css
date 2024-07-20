@@ -1,0 +1,98 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 2vh 4vh;
+    border-radius: 7.5vh;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    margin: 2vh;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 15vh;
+    height: 15vh;
+}
+
+.button-color {
+    background-color: #555555;
+    color: white;
+}
+
+.container {
+    width: 15vh;
+    height: 15vh;
+    display: inline-block;
+    background-color: lightgray;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 2vh;
+    border-radius: 3vh;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.content {
+    text-align: center;
+    font-size: 7vh;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+#scoretable {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 5vh; /* Increased margin for better spacing */
+    text-align: right;
+}
+
+table {
+    border-collapse: collapse;
+    width: 30vh; /* Increased width for a larger table */
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 1vh; /* Increased padding for more spacing */
+    text-align: center;
+    font-size: 2vh; /* Increased font size for better readability */
+}

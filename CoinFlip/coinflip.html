@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <div class="content">
+        <h3>Coin Flip</h3>
+        <div class="flex-container">
+            <p>Make a guess</p>
+            <div class="container"><img src="coin.png" alt="Coin Image"></div>
+        </div>
+       
+        <div class="button-container">
+            <button onclick="makeGuess('heads');" class="button button-color">Head</button>
+            <button onclick="makeGuess('tails');" class="button button-color">Tails</button>
+            <button onclick="resetScore();" class="button button-color">Reset</button>
+        </div>
+        <p id="result"></p>
+        <div id="scoretable"></div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
