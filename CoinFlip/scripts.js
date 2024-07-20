@@ -1,8 +1,12 @@
-let score = {
-    totalguess: 0,
-    win: 0,
-    lose: 0
-};
+let score = JSON.parse(localStorage.getItem('score'));
+
+if(!score){
+    score={
+        totalguess: 0,
+        win: 0,
+        lose: 0
+    }
+}
 
 function updateScoreTable() {
     const tableHtml = `
@@ -44,6 +48,7 @@ function makeGuess(g) {
         score.totalguess += 1;
         score.lose += 1;
     }
+    localStorage.setItem('score',JSON.stringify(score));
     updateScoreTable();
 }
 
@@ -53,6 +58,7 @@ function resetScore() {
         win: 0,
         lose: 0
     };
+    localStorage.removeItem('score');
     document.getElementById('result').innerHTML = '';
     updateScoreTable();
 }
