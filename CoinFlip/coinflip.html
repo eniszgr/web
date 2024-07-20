@@ -8,21 +8,20 @@
    
 </head>
 <body>
-    <div class="content">
-        <h3>Coin Flip</h3>
-        <div class="flex-container">
-            <p>Make a guess</p>
-            <div class="container"><img src="coin.png" alt="Coin Image"></div>
-        </div>
-       
-        <div class="button-container">
-            <button onclick="makeGuess('heads');" class="button button-color">Head</button>
-            <button onclick="makeGuess('tails');" class="button button-color">Tails</button>
-            <button onclick="resetScore();" class="button button-color">Reset</button>
-        </div>
-        <p id="result"></p>
-        <div id="scoretable"></div>
+    <h3>Coin Flip</h3>
+    <div class="flex-container">
+        <p>Make a guess</p>
+        <div class="container"><img src="coin.png" alt="Coin Image"></div>
     </div>
+    
+    <div class="button-container">
+        <button onclick="makeGuess('heads');" class="button button-color">Head</button>
+        <button onclick="makeGuess('tails');" class="button button-color">Tails</button>
+        <button onclick="resetScore();" class="button button-color">Reset</button>
+    </div>
+    <p id="result"></p>
+    <div id="scoretable"></div>
+
     
     <script src="scripts.js"></script>
 </body>
